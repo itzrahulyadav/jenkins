@@ -139,3 +139,23 @@ ssh-keygen
 
 14. Congo🎉🎉🎉🎉Your github and jenkins is integrated.
 
+15. Go to the project and click on build now.
+
+16. Go to your ec2 instance and move the file
+
+```
+cd /var/lib/jenkins/workspace/node-to-do
+```
+
+17. You will see all your files and folder from the github has been added to the jenkins.
+
+18. Install all the dependencies needed to run the app like Nodejs,Flask or whatever specified in the project.
+
+19. Install **Docker** on the instance.
+
+```
+sudo apt-get install docker.io
+
+```
+
+20. 
