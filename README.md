@@ -158,4 +158,29 @@ sudo apt-get install docker.io
 
 ```
 
-20. 
+20. Go to Jenkins and click on configure app
+21. click on build steps and select shell
+22. write all the steps performed.
+
+```
+docker build . -t node-todo
+docker run -d --name TODO_APP -p 8000:8000 node-todo
+
+```
+23. click on save
+24. Click on build now
+25. give permission to the ec2
+
+```
+sudo usermod -aG docker jenkins
+systemctl restart jenkins
+```
+26. Restart jenkins
+27. Click on build now
+
+# Now we will be working with webhooks
+
+__ We will make a CI/CD  pipeline that whenever user pushes the code on github it will trigger the build __ 
+
+1. Go to manage jenkins
+2. Install plugins
