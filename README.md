@@ -103,7 +103,7 @@ ssh-keygen
 9. id_rsa is private key while id_rsa.pub is public key
 
 ```
- cat id_rsa
+ cat id_rsa.pub
  
 ```
 
